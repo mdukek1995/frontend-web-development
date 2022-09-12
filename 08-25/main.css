@@ -1,0 +1,20 @@
+div {
+    display: block;
+    background-color: linen;
+    margin: 10px;
+    padding: 5px; /*top, right, bottom, left if you put in 4 values*/
+}
+
+.my-class {
+    background-color: yellow;
+} /*classes override standard, multiple classes are executed in order so lower in code would be present*/
+
+div.my-class {
+    background-color: antiquewhite;
+}
+
+#page-title {
+    font-size: 4em;
+}
+
+/* psuedoclasses/elements like hover are in mdn docs*/

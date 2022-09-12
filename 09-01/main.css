@@ -1,0 +1,43 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+ /*flex-basis determines initial/base size of flex item
+ flex-grow determines how quickly item will grow or shrink relative to siblings
+ flex-shrink is the same (allows for proportions)
+ shorthand.. flex: grow shrink basis
+ can also do grow shrink OR grow basis*/
+}
+.flex-item {
+    color: white;
+    flex-grow: 0; 
+    flex-basis: 10rem;
+    flex-shrink: 1;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#first-child {
+    background-color: blueviolet;
+}
+
+#second-child {
+    background-color: green;
+}
+
+#third-child {
+    background-color: black;
+    flex-shrink: 2;
+}
+
+#fourth-child {
+    background-color: orange;
+    flex-shrink: 0;
+}
