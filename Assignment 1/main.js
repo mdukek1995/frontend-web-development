@@ -26,7 +26,7 @@ moonImg.addEventListener('click', () => {
 function addClouds() {
     var img = document.createElement("img");
     img.src = "clouds.PNG";
-    var src = document.getElementById("day-night");
+    var src = document.getElementById("day-night")
     src.appendChild(img);
 }
 
