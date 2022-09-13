@@ -14,3 +14,7 @@ body {
     align-items: center;
     max-width: 100%;
 }
+
+img:hover {
+    cursor: pointer;
+}
