@@ -1,0 +1,99 @@
+h1 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    background-image: url('background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+label {
+    color: black;
+}
+fieldset {
+    background-color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+#pizza-order {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid black 1px;
+
+}
+
+form {
+    background-color: white;
+    width: 68%;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 60px -16px #F6AE2D;
+}
+input[type=text] {
+    padding:10px;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=phone] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+button {
+    border-color: #F6AE2D;
+    background-color:white;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    color: #F6AE2D;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+#logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    padding:  auto;
+    border: none;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    margin: 2em auto;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic bold;
+}

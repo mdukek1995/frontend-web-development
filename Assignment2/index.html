@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment Two-ATLAS 5630</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="main.css"/>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="FERINOS.png" alt="logo image" width="300px"height="300px" id="logo-image">
+        </header>
+        <div id="form-title">
+            <h1>Order Your Pizza Here</h1>
+        </div>
+        <form id="pizza-order">
+            <fieldset>
+                <label for="name">Name for the order</label>
+                <input type="text" id="name" placeholder="First and last name" required>
+            </fieldset>
+            <fieldset>
+                <label for="phone">Phone #</label>
+                <input type="phone" id="phone" placeholder="###-###-####" required> <!-- good for mobile-->
+            </fieldset>
+            <fieldset id="size">
+                <legend>Select your size</legend>
+
+                <input type="radio" id="twelve-inch" name="radio-group" value="Small">
+                <label for="twelve-inch">Small (12" Serves 1-2)</label>
+
+                <input type="radio" id="fourteen-inch" name="radio-group" value="Medium">
+                <label for="fourteen-inch">Medium (14" Serves 2-3)</label>
+
+                <input type="radio" id="sixteen-inch" name="radio-group" value="Large">
+                <label for="sixteen-inch">Large (16" Serves 3-4)</label>
+                
+            </fieldset>
+            <fieldset id="type">
+                <legend>Choose your base</legend>
+
+                <input type="radio" id="cheese" name="radio-group2">
+                <label for="cheese">Cheese</label>
+
+                <input type="radio" id="pepperoni" name="radio-group2">
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="radio" id="hawaiian" name="radio-group2">
+                <label for="hawaiian">Hawaiian</label>
+
+                <input type="radio" id="veggie" name="radio-group2">
+                <label for="veggie">Veggie</label>
+
+                <input type="radio" id="meat-lovers" name="radio-group2">
+                <label for="meat-lovers">Meat Lovers</label>
+            </fieldset>
+            <fieldset>
+                <legend>Any add-ons?</legend>
+
+                <input type="checkbox" id="olives" name="checkbox-group">
+                <label for="olives">Olives</label>
+
+                <input type="checkbox" id="pineapple" name="checkbox-group">
+                <label for="pineapple">Pineapple</label>
+
+                <input type="checkbox" id="artichoke" name="checkbox-group">
+                <label for="artichoke">Artichoke</label>
+
+                <input type="checkbox" id="sausage" name="checkbox-group">
+                <label for="sausage">Sausage</label>
+
+                <input type="checkbox" id="tomato" name="checkbox-group">
+                <label for="tomato">Tomatoes</label>
+
+                <input type="checkbox" id="mushroom" name="checkbox-group">
+                <label for="mushroom">Mushroom</label>
+
+                <input type="checkbox" id="basil" name="checkbox-group">
+                <label for="basil">Basil</label>
+                
+            </fieldset>
+            <fieldset id="buttons">
+                <button type="button" id="place-order">Place Order</button>
+            </fieldset>
+        </form>
+        <div id="message"></div>
+    </body>
+</html>
