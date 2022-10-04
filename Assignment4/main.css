@@ -1,0 +1,56 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#attribution {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: white;
+}
+
+#attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .7);
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+}
+
+body {
+    background-image: url('background.jpg'); /*Photo by <a href="https://unsplash.com/es/@vincentledvina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vincent Ledvina</a> on <a href="https://unsplash.com/s/photos/flatirons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-size: cover;
+}

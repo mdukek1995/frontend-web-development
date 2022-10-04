@@ -47,15 +47,14 @@ function quiz(){
 		num++;  
 		//if (answer === quiz_answers[num]) {
 			//score++;
-		//	console.log("correct");
-		//	} else {
-		//		console.log("wrong");
-		//	}
-		//	if (num = totalQuestion) {
+			//console.log("correct");
+		//} else {
+			//console.log("wrong");
+	//	}
+		//if (num = totalQuestion) {
 		//	num = 0;
-		//	document.write('<p>You got ${score} out of ${totalQuestion} questions correct.</p>');
+	//		document.write('<p>You got ${score} out of ${totalQuestion} questions correct.</p>');
 		//} 
-	
     }
 }
 
