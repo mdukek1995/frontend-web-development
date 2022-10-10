@@ -1,11 +1,9 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  background: linear-gradient(#a2d2ff,#7B92A4, #47839C, #14859F, #002843, #001928);
+  min-height: 100vh;
+
 }
-#block {
+/*#block {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -35,11 +33,29 @@ div#parallax-image > img {
   height: auto;
 }
 
-#banner {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: linear-gradient(#062156, #183441);
+*/
+section#fish {
+   position: relative;
+   width:100%;
+   height: 100vh;
+   padding: 100px;
+}
+
+section#fish > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section#whales {
+  position: relative;
+  width:100%;
+  height: 100vh;
+  padding: 100px;
+}
+
+section#whales > img {
+ position: absolute;
+ top: 0;
+ left: 0;
 }

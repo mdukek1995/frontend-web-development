@@ -1,4 +1,4 @@
-var scale = 1,
+/*var scale = 1,
   panning = false,
   pointX = 0,
   pointY = 0,
@@ -27,7 +27,6 @@ zoom.addEventListener('wheel', (e) => {
     (deltaY = 4);
   }
   
-});
+});*/
 
-var image = document.getElementsByClassName('parallax-image');
-new simpleParallax(image);
+// after zoom, maybe I can append the image and set the criteria? That way it won't be showing
