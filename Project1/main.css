@@ -1,7 +1,13 @@
-html, body {
-  background: linear-gradient(#a2d2ff,#7B92A4, #47839C, #14859F, #002843, #001928);
+body {
+  background: linear-gradient(#a2d2ff, #47839C, #14859F, #002843, #001928, black);
   min-height: 100vh;
-
+  margin: 0;
+  width: 100%;
+  left: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
 }
 /*#block {
   margin: 0;
@@ -34,28 +40,116 @@ div#parallax-image > img {
 }
 
 */
-section#fish {
+div#boat {
    position: relative;
    width:100%;
-   height: 100vh;
-   padding: 100px;
+   min-height: 100vh;
+   padding: 300px;
+   background: linear-gradient(#FEBC7F, #EB7955, #B85C51, #AC6F7E) ;
 }
 
-section#fish > img {
+#ferry {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  object-fit: contain;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+#water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 70%;
+}
+
+#cloud-one {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+#cloud-two {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+#cloud-three {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-section#whales {
+div#transition-two {
+  min-height: 50rem;
+  width: 100%;
+}
+div#boat::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  z-index: 5;
+  background: linear-gradient(to top, #00252E, transparent);
+}
+div#fish {
+   position: relative;
+   width:100%;
+   height: 100vh;
+   padding: 300px;
+   z-index: 4;
+   background: linear-gradient( #00252E, #14859F, #002843);
+}
+
+#salmon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 300px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+div#whales {
   position: relative;
   width:100%;
   height: 100vh;
-  padding: 100px;
+  padding: 300px;
+  background: linear-gradient(#002843, #001928, black);
+
 }
 
-section#whales > img {
+#female-orca {
  position: absolute;
  top: 0;
  left: 0;
+ z-index: 2;
+ padding: 300px;
+ max-width: 100%;
+ object-fit: cover;
+}
+
+#male-orca {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  padding: 300px;
+  max-width: 100%;
+  object-fit: cover;
 }

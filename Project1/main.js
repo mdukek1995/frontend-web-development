@@ -30,3 +30,16 @@ zoom.addEventListener('wheel', (e) => {
 });*/
 
 // after zoom, maybe I can append the image and set the criteria? That way it won't be showing
+
+console.log()
+let maleOrca = document.getElementById('male-orca');
+let femaleOrca = document.getElementById('female-orca');
+let fish = document.getElementById('salmon');
+
+console.log()
+window.addEventListener('scroll', (e) => {
+  let value = window.scrollY;
+  console.log(value); 
+  femaleOrca.style.left = -value*0.25 + 'px';
+  maleOrca.style.left = -value*0.17 + 'px';
+})
