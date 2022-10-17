@@ -1,53 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans:wght@700&display=swap');
+
 body {
-  background: linear-gradient(#a2d2ff, #47839C, #14859F, #002843, #001928, black);
+  background-color: black;
   min-height: 100vh;
   margin: 0;
   width: 100%;
-  left: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   background-repeat: no-repeat;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-/*#block {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: black;
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  font-size: 2em;
+  position: absolute;
 }
-#zoom {
-  width: 100%;
-  height: 100%;
-  transform-origin: 0px 0px;
-  transform: scale(1) translate(0px, 0px);
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 8em;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 5px;
+  opacity: 1;
 }
-div#zoom > img {
-  width: 100%;
-  height: auto;
+#title {
+  z-index: 4;
+  top: 0;
+  left: 30px;
+  opacity: 1;
 }
-
-#parallax-image {
-  width: 100%;
-  height: 100%;
-}
-
-div#parallax-image > img {
-  visibility: hidden;
-  width: 100%;
-  height: auto;
-}
-
-*/
 div#boat {
    position: relative;
    width:100%;
    min-height: 100vh;
-   padding: 300px;
-   background: linear-gradient(#FEBC7F, #EB7955, #B85C51, #AC6F7E) ;
+   padding-top: 300px;
+   padding-bottom: 300px;
+   background: linear-gradient(#AC6F7E, #B85C51,#EB7955, #FEBC7F) ;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
 }
-
+#sun{
+  position: absolute;
+  transform: translate(0px, 20px);
+  z-index: 0;
+  object-fit: contain;
+  width: 50%;
+  max-width: 100%;
+  height: 50%;
+}
 #ferry {
   position: absolute;
   bottom: 0;
@@ -71,31 +82,27 @@ div#boat {
 
 #cloud-one {
   position: absolute;
-  top: 0;
-  left: 0;
+  transform: translate(0px, 100px);
   z-index: 0;
   max-width: 100%;
   object-fit: contain;
 }
 #cloud-two {
   position: absolute;
-  top: 0;
+  transform: translate(500px, 150px);
   z-index: 0;
   max-width: 100%;
   object-fit: contain;
 }
 #cloud-three {
   position: absolute;
-  top: 0;
+  transform: translate(700px, 10px);
   z-index: 0;
   max-width: 100%;
   object-fit: contain;
 }
 
-div#transition-two {
-  min-height: 50rem;
-  width: 100%;
-}
+
 div#boat::before {
   content: '';
   bottom: 0;
@@ -106,40 +113,103 @@ div#boat::before {
   height: 100px;
   z-index: 5;
   background: linear-gradient(to top, #00252E, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 div#fish {
    position: relative;
    width:100%;
    height: 100vh;
-   padding: 300px;
+   padding-top: 300px;
+   padding-bottom: 300px;
    z-index: 4;
    background: linear-gradient( #00252E, #14859F, #002843);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
 }
 
+#bubbles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  z-index: 0;
+}
 #salmon {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 300px;
+  padding-top: 300px;
+  padding-bottom: 300px;
   max-width: 100%;
   object-fit: contain;
+  z-index: 5;
 }
-
+#noise {
+  z-index: 6;
+  bottom: 70px;
+  left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#food {
+  z-index: 6;
+  top: 20rem;
+  right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#toxins {
+  z-index: 6;
+  top: 0;
+  left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
 div#whales {
   position: relative;
   width:100%;
   height: 100vh;
-  padding: 300px;
+  padding-top: 300px;
+  padding-bottom: 300px;
   background: linear-gradient(#002843, #001928, black);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 4;
 
 }
-
+#blubber {
+  position: absolute;
+  top: 20px;
+  transform: translate(30px, 0px);
+  z-index: 4;
+  padding-top: 30px;
+  padding-bottom: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+#toxins-stored {
+  z-index: 6;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+  margin-left: 40%;
+}
 #female-orca {
  position: absolute;
  top: 0;
- left: 0;
- z-index: 2;
- padding: 300px;
+ transform: translate(500px, 0px);
+ z-index: 6;
+ padding-top: 700px;
+ padding-bottom: 300px;
  max-width: 100%;
  object-fit: cover;
 }
@@ -147,9 +217,10 @@ div#whales {
 #male-orca {
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 0;
-  padding: 300px;
+  transform: translate(500px, 0px);
+  z-index: 5;
+  padding-top: 700px;
+  padding-bottom: 300px;
   max-width: 100%;
   object-fit: cover;
 }
