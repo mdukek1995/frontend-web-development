@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
 body {
   background-color: black;
   min-height: 100vh;
@@ -32,6 +32,27 @@ h1 {
   top: 0;
   left: 5px;
   opacity: 1;
+}
+h3{
+  z-index: 6;
+  text-align: center;
+  margin-left: 60%;
+  margin-top: 60%;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10em;
+  position: absolute;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.6em;
+  position: absolute;
 }
 #title {
   z-index: 4;
@@ -157,10 +178,24 @@ div#fish {
   display: flex;
   flex-wrap: wrap;
 }
+#noise-details {
+  z-index: 6;
+  bottom: 0px;
+  left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
 #food {
   z-index: 6;
   top: 20rem;
   right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#food-details {
+  z-index: 6;
+  margin-left: 60%;
+  margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -224,3 +259,11 @@ div#whales {
   max-width: 100%;
   object-fit: cover;
 }
+
+#population {
+  z-index: 6;
+  text-align: center;
+  margin-left: 60%;
+  margin-top: 50%;
+}
+

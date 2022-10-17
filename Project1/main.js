@@ -1,36 +1,3 @@
-/*var scale = 1,
-  panning = false,
-  pointX = 0,
-  pointY = 0,
-  start = { x: 0, y: 0 },
-  zoom = document.getElementById("zoom");
-
-function setTransform() {
-  zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
-}
-
-
-
-zoom.addEventListener('wheel', (e) => {
-  //e.preventDefault();
-  var xs = (e.clientX - pointX) / scale,
-    ys = (e.clientY - pointY) / scale,
-    delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-  if (delta > 0 && scale <= 4) {
-    (scale *= 1.2);
-    pointX = e.clientX - xs * scale;
-    pointY = e.clientY - ys * scale;
-    console.log(scale);
-    setTransform();
-  } else {
-    //e.stopPropagation();
-    (deltaY = 4);
-  }
-  
-});*/
-
-// after zoom, maybe I can append the image and set the criteria? That way it won't be showing
-
 
 let maleOrca = document.getElementById('male-orca');
 let femaleOrca = document.getElementById('female-orca');
@@ -44,16 +11,22 @@ let h2Title = document.getElementById('title');
 let bubbles = document.getElementById('bubbles');
 let blubber = document.getElementById('blubber');
 
-const whales = document.getElementById('whales');
+const whaleDiv = document.getElementById('whales');
 const fishDiv = document.getElementById('fish');
 
 window.addEventListener('scroll', (e) => {
+  /*find scroll measurement*/
   let totalScroll = window.scrollY;
-  let whalePosition = whales.offsetTop;
+
+  /*position where divs begin*/
+  let whalePosition = whaleDiv.offsetTop;
   let fishPosition = fishDiv.offsetTop;
+
+  /*start scroll measurement where div begins*/
   let distanceWhale = totalScroll-whalePosition;
   let distanceSalmon = totalScroll-fishPosition;
 
+  /*calculations for movement from start point based on scroll*/
   let femaleOrcaX = 500 + (-distanceWhale*.6);
   let maleOrcaX = 500 + (-distanceWhale*.4);
   let cloudOneY = 100-(totalScroll*0.5);
@@ -67,6 +40,7 @@ window.addEventListener('scroll', (e) => {
   let bubbleY = 0 - (totalScroll*0.2);
   let blubberOpacity = 0 + (distanceSalmon*0.00065);
 
+  /*call transformations*/
   femaleOrca.style.transform = `translateX(${femaleOrcaX}px)`;
   maleOrca.style.transform = `translateX(${maleOrcaX}px)`;
   cloudOne.style.transform = `translate(${cloudOneX}px, ${cloudOneY}px)`;
