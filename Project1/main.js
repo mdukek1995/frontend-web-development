@@ -58,5 +58,5 @@ window.addEventListener('scroll', (e) => {
 let scrollButton = document.getElementById('scroll');
 
 scrollButton.addEventListener('click', (e) => {
-    window.scrollTo(0,0);
+    window.scrollTo({top: 0, behavior: 'smooth'});
 })
