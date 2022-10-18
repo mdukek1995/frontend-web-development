@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro&display=swap');
+
 body{
     background-color: white;
 }
@@ -15,7 +17,7 @@ body{
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     color: #B7553A;
 }
@@ -35,7 +37,8 @@ img#logo {
     display:flex ;
     justify-content: center;
     flex-flow: row nowrap;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: large;
     text-transform: uppercase;
 }
 
@@ -70,33 +73,52 @@ ul#horizontal-menu li a:active {
 }
 
 .project-box {
-    display: flex;
     flex-flow: row wrap;
+    display: flex;
+    padding-bottom: 10rem;
+
 }
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1em;
+}
+
 #project-one {
-    width: 10rem ;
-    height: 10rem;
-    margin: 2rem;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 0;
+    margin-right: 1em;
+    margin-top: 0;
     border: 1px solid black;
     text-align: center;
-    line-height: 10rem;
+    line-height: 1rem;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 #project-two {
-    width: 10rem ;
-    height: 10rem;
-    margin: 2rem ;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 1em;
+    margin-right: 1em;
     border: 1px solid black;
     text-align: center;
     line-height: 10rem;
+    font-family: 'Poppins', sans-serif;
+
 }
 #project-three {
-    width: 10rem ;
-    height: 10rem;
-    margin: 2rem ;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 1em;
+    margin-right: 0;
     border: 1px solid black;
     text-align: center;
     line-height: 10rem;
+    font-family: 'Poppins', sans-serif;
+
 }
 .assignment-box {
     display: flex;
@@ -170,13 +192,14 @@ ul#horizontal-menu li a:active {
 
 #close-pointer {
     position: absolute;
-    top: 50px; right: 50px;
+    top: 50px; 
+    left: 50px;
 }
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    padding: 200px 62px 0px 62px;
+    padding: 150px 62px 0px 62px;
     left: 0;
     top: 0;
     width: 100%;
@@ -201,11 +224,10 @@ ul#horizontal-menu li a:active {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-left: 2rem;
     padding: 1em;
     width: auto;
     max-width: 200px;
-    height: 20rem;
+    height: 60vh;
     text-align: center;
     background-color: white;
 }
@@ -214,7 +236,7 @@ ul#horizontal-menu li a:active {
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color:#BE6F38;
     text-decoration: none;
     text-transform: uppercase;
@@ -224,19 +246,20 @@ ul#horizontal-menu li a:active {
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color:#512418;
 }
 .project-modal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto 2rem;
-    width: 20rem ;
-    height: 20rem;
-    padding: 1rem;
+    margin: auto 1rem;
+    width: 60vh ;
+    height: 60vh;
+    padding: 1em;
     border: 1px solid #CCCCCC;
     background-color: white;
+    object-fit: cover;
 }
 
 .assign-img {
@@ -247,13 +270,13 @@ ul#horizontal-menu li a:active {
 
 .assign-capt {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #512418;
 }
 
 .assignment-box a{
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #512418;
     text-align: center;
 }
