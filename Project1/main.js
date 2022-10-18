@@ -54,3 +54,9 @@ window.addEventListener('scroll', (e) => {
   bubbles.style.top = bubbleY + 'px';  
   blubber.style.opacity = blubberOpacity;
 });
+
+let scrollButton = document.getElementById('scroll');
+
+scrollButton.addEventListener('click', (e) => {
+    window.scrollTo(0,0);
+})
