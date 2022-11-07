@@ -1,15 +1,12 @@
 {
-  "name": "tailwind",
+  "name": "project2",
   "version": "1.0.0",
-  "description": "tailwind css",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "build-css": "tailwindcss -i src/styles.css -o public/styles.css "
+    "dev": "npx parcel index.html"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "animejs": "^3.2.1",
-    "tailwindcss": "^3.2.1"
+    "parcel": "^2.7.0"
   }
 }
