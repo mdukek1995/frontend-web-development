@@ -6,7 +6,7 @@
     "dev": "npx parcel index.html"
   },
   "dependencies": {
-    "parcel": "^2.7.0",
-    "three": "^0.146.0"
+    "animejs": "^3.2.1",
+    "parcel": "^2.7.0"
   }
 }
