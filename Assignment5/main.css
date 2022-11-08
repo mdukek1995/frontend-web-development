@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+  background: #c21500;  /* fallback for old browsers */
+  background: linear-gradient(to right, #ffc500, #c21500); 
     overflow:hidden;
   }
   .dot{
@@ -7,8 +8,7 @@ body{
     height:35px;
     position:absolute;
     border-radius: 50px;
-    background-color: transparent;
-    color: white;
+    background-color: white;
     background-size: 100% 100%;
   }
   html, body, #container {width:100%; height:100%; }
