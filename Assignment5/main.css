@@ -7,7 +7,7 @@ body{
     width:35px;
     height:35px;
     position:absolute;
-    border-radius: 50px;
+    border-radius: 10px / 30px;
     background-color: white;
     background-size: 100% 100%;
   }
