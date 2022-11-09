@@ -1,15 +1,18 @@
 body{
-  background: #c21500;  /* fallback for old browsers */
-  background: linear-gradient(to right, #ffc500, #c21500); 
-    overflow:hidden;
+  background: #aa4b6b; 
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
+  overflow: hidden;
+  
   }
   .dot{
     width:35px;
     height:35px;
     position:absolute;
-    border-radius: 10px / 30px;
-    background-color: white;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,  #95cdd6, #D7A3B4);
     background-size: 100% 100%;
+
   }
   html, body, #container {width:100%; height:100%; }
  
