@@ -536,45 +536,61 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _animejs = require("animejs");
 var _animejsDefault = parcelHelpers.interopDefault(_animejs);
 var svg = document.querySelector("#svg-map");
-console.log(svg);
-function displayName(name) {
-    document.getElementById("country-name").innerText = name;
-}
-var canada = document.getElementById("Canada");
-var greenland = document.getElementById("greenland");
-var iceland = document.getElementById("iceland");
-var europeAsia = document.getElementById("europe");
-var africa = document.getElementById("africa-2");
-var australia = document.getElementById("australia-2");
-var mexico = document.getElementById("mexico-2");
-var unitedStates = document.getElementById("northamerica");
-var southAmerica = document.getElementById("southamerica-2");
-canada.addEventListener("mouseover", ()=>{
-    displayName("Canada");
-});
-greenland.addEventListener("mouseover", ()=>{
-    displayName("Greenland");
-});
-iceland.addEventListener("mouseover", ()=>{
-    displayName("Iceland");
-});
-europeAsia.addEventListener("mouseover", ()=>{
-    displayName("Europe & Asia");
-});
-africa.addEventListener("mouseover", ()=>{
-    displayName("Africa");
-});
-australia.addEventListener("mouseover", ()=>{
-    displayName("Australia");
-});
-mexico.addEventListener("mouseover", ()=>{
-    displayName("Mexico");
-});
-unitedStates.addEventListener("mouseover", ()=>{
-    displayName("United States");
-});
-southAmerica.addEventListener("mouseover", ()=>{
-    displayName("South America");
+console.log("svg");
+svg.addEventListener("load", function() {
+    // get the inner DOM of alpha.svg
+    var svgDoc = svg.contentDocument;
+    function displayName(name) {
+        document.getElementById("country-name").innerText = name;
+    }
+    function highlight(svgElement) {
+        svgElement.setAttribute("stroke", "white");
+    }
+    var canada = svgDoc.getElementById("Canada");
+    var greenland = svgDoc.getElementById("Greenland");
+    var iceland = svgDoc.getElementById("Iceland");
+    var europeAsia = svgDoc.getElementById("Europe");
+    var africa = svgDoc.getElementById("Africa-2");
+    var australia = svgDoc.getElementById("Australia-2");
+    var mexico = svgDoc.getElementById("Mexico-2");
+    var unitedStates = svgDoc.getElementById("North_America");
+    var southAmerica = svgDoc.getElementById("South_America-2");
+    canada.addEventListener("mouseover", ()=>{
+        displayName("Canada");
+        highlight(canada);
+    });
+    greenland.addEventListener("mouseover", ()=>{
+        displayName("Greenland");
+        highlight(greenland);
+    });
+    iceland.addEventListener("mouseover", ()=>{
+        displayName("Iceland");
+        highlight(iceland);
+    });
+    europeAsia.addEventListener("mouseover", ()=>{
+        displayName("Europe & Asia");
+        highlight(europeAsia);
+    });
+    africa.addEventListener("mouseover", ()=>{
+        displayName("Africa");
+        highlight(africa);
+    });
+    australia.addEventListener("mouseover", ()=>{
+        displayName("Australia");
+        highlight(australia);
+    });
+    mexico.addEventListener("mouseover", ()=>{
+        displayName("Mexico");
+        highlight(mexico);
+    });
+    unitedStates.addEventListener("mouseover", ()=>{
+        displayName("United States");
+        highlight(unitedStates);
+    });
+    southAmerica.addEventListener("mouseover", ()=>{
+        displayName("South America");
+        highlight(southAmerica);
+    });
 });
 
 },{"animejs":"jokr5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jokr5":[function(require,module,exports) {

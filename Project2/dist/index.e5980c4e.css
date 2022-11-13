@@ -109,21 +109,31 @@ ul li a {
   transform: scale(.1, 1);
 }
 
-#container {
+#map-container {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
   display: flex;
 }
 
-#world-map {
-  width: 80%;
+#svg-map {
+  width: 50%;
   height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .label {
   color: #000;
+  z-index: 2;
+  margin-top: -400px;
+  margin-left: 5em;
+  padding-left: 0;
   font-family: Roboto Mono, monospace;
+  font-size: 2em;
+  position: absolute;
 }
 
 /*# sourceMappingURL=index.e5980c4e.css.map */
