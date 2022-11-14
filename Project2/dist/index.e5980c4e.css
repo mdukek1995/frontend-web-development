@@ -5,6 +5,7 @@ body {
   height: 100%;
   background-color: #dcd9d4;
   background-image: linear-gradient(#ffffff80 0%, #00000080 100%), radial-gradient(at 50% 0, #ffffff1a 0%, #00000080 50%);
+  background-repeat: no-repeat;
   flex-direction: column;
   display: flex;
 }
@@ -25,6 +26,10 @@ h1 {
   align-items: center;
   margin: auto;
   font-size: 5em;
+}
+
+#title {
+  font-size: 50%;
 }
 
 #navigation {
@@ -127,13 +132,55 @@ ul li a {
 
 .label {
   color: #000;
-  z-index: 2;
-  margin-top: -400px;
-  margin-left: 5em;
-  padding-left: 0;
   font-family: Roboto Mono, monospace;
+}
+
+#area-title {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#country-name {
+  margin-top: -300px;
+  margin-left: 2em;
+  padding-left: 0;
   font-size: 2em;
   position: absolute;
+}
+
+#case-number {
+  padding-left: 0;
+  font-size: 1em;
+  font-weight: 600;
+  position: absolute;
+}
+
+p {
+  color: #000;
+  z-index: 2;
+  margin-top: 0;
+  margin-left: 10%;
+  padding-left: 0;
+  font-family: Roboto Mono, monospace;
+  font-size: 1em;
+  position: absolute;
+}
+
+#stats {
+  margin-top: -200px;
+}
+
+.chart {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#gender {
+  width: 30vh;
+  height: 30vh;
+  margin: 10% auto auto 10%;
+  padding: auto;
 }
 
 /*# sourceMappingURL=index.e5980c4e.css.map */
