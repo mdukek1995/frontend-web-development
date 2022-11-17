@@ -105,7 +105,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Sexual Exploitation')
@@ -126,7 +126,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Forced Marriages')
@@ -146,7 +146,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Begging')
@@ -165,7 +165,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Organ Removal')
@@ -187,7 +187,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Domestic Servitude')
@@ -207,7 +207,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Debt Bondage')
@@ -228,7 +228,7 @@ svg.addEventListener("load",function(){
             duration: 3000,
             endDelay: 1000,
             direction: 'alternate',
-            fill: '#1F613E',
+            fill: 'rgba(88, 164, 176, 1)',
         })
 
         exploitationType('Forced Labor')

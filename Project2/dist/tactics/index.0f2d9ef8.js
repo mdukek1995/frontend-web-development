@@ -617,7 +617,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Sexual Exploitation");
         exploitationStatement(`A study done by the UNODC found that 50% of trafficking involves sexual exploitation. It's the most commonly found form of exploitation in America, Europe, East Asia, and the Pacific. It is largely reported to be women- 5% of victims are men, 3% are boys, and 25% are girls. `);
@@ -632,7 +632,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Forced Marriages");
         exploitationStatement("1% of trafficking involve forced marriages. It was reported to be found across 9 countries, typically involving women and young girls.");
@@ -647,7 +647,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Begging");
         exploitationStatement("Reported among 19 countries, forced begging accounts for more than 1% of exploitation. It is found to occur mainly within the subregion of North Africa and the Middle East.");
@@ -667,7 +667,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Organ Removal");
         exploitationStatement("Between 2017 and 2018, over 65 people had been reported to be victims of involuntary organ removal. Areas in the report include North Africa, Central America, South Asia, and Europe.");
@@ -682,7 +682,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Domestic Servitude");
         exploitationStatement("Found when an employer uses violence or abuse of a position to make the employee believe they must continue working. Recurring vulnerabilities are immigrants, isolation, and exclusion from labor laws. ");
@@ -697,7 +697,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Debt Bondage");
         exploitationStatement('Victims are coerced into working for little to no compensation to "repay" a loan or fee.');
@@ -715,7 +715,7 @@ svg.addEventListener("load", function() {
             duration: 3000,
             endDelay: 1000,
             direction: "alternate",
-            fill: "#1F613E"
+            fill: "rgba(88, 164, 176, 1)"
         });
         exploitationType("Forced Labor");
         exploitationStatement("As the second-most prominent form of exploitation, forced labor was a proponent in 38% of reported cases. 38% of victims were men, 26% women, 21% boys, and 15% girls.");
