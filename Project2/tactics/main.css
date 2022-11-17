@@ -120,7 +120,7 @@ transform: scale(0.1, 1);
 .container {
     width: 100%;
     display: flex;
-    padding: 5%;
+    padding: 10%;
 }
 
 #forms {
@@ -174,3 +174,4 @@ transform: scale(0.1, 1);
     line-height: 1.2;
     margin-top: 10%;
 }
+
