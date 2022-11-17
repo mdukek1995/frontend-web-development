@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "dev": "npx parcel index.html"
+    "dev": "npx parcel index.html",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "animejs": "^3.2.1",
