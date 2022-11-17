@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@200&display=swap');
+html, body {
+    height: 100% !important;
+}
 
 body {
     background-color: #DCD9D4;
@@ -9,6 +12,7 @@ body {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header {
     width: 100%;
@@ -125,6 +129,7 @@ transform: scale(0.1, 1);
     padding-bottom: 0;
     margin-bottom: 0;
 
+
 }
 
 .label {
@@ -141,6 +146,9 @@ transform: scale(0.1, 1);
     font-size: 2em;
     margin-left: 2em;
     padding-left: 0;
+    max-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #case-number {
@@ -169,6 +177,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: auto;
 }
 
 #gender {
@@ -178,4 +187,7 @@ p {
     margin: auto;
     margin-left: 10%;
     margin-top: 10%;
+}
+#footer {
+    color: rgba(88, 164, 176, 1);
 }

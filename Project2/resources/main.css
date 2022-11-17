@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@200&display=swap');
+html, body {
+    height: 100% !important;
+}
 
 body {
     background-color: #DCD9D4;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
     background-blend-mode: soft-light,screen;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header {
     width: 100%;
     display: flex;
-    position: relative;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    padding-top: 3em;
+    padding-top: 4em;
 }
 h1 {
     color: black;
-    position: absolute;
-    z-index: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -28,14 +31,27 @@ h1 {
     font-size: 5em;
     
 }
+
+h2 {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Oswald', monospace;
+}
+#title {
+    font-size: 50%;
+}
 #navigation {
     width: 100%;
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    z-index: 2;
     position: absolute;
 }
+
 
 .nav-button {
     border-radius: 20px;
@@ -48,7 +64,7 @@ h1 {
     text-transform: uppercase;
     padding: 1em;
     width: auto;
-    margin-top: 30%;
+    margin-top: 40%;
 }
 
 
@@ -109,4 +125,28 @@ background-color: rgba(0,0,0,0.1);
 .nav-button:hover::after {
 opacity: 0; 
 transform: scale(0.1, 1);
+}
+#more-information {
+    display: flex;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    flex-direction: column;
+}
+
+.resource-links{
+    display: block;
+    outline: none;
+    text-decoration: none;
+    padding: 0 1em 0;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size: 1.3em;
+}
+
+.resource-links:hover {
+    color: white;
 }

@@ -141,7 +141,6 @@ svg.addEventListener("load",function(){
         casesRecorded('9,301');
         var northAmerica = [1196, 5735, 317, 2053];
         updateChart(northAmerica);
-
         });
 
     southAmerica.addEventListener('mouseover', ()=> {

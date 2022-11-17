@@ -1,4 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@200&display=swap";
+html, body {
+  height: 100% !important;
+}
+
 body {
   background-blend-mode: soft-light, screen;
   width: 100%;
@@ -6,6 +10,7 @@ body {
   background-color: #dcd9d4;
   background-image: linear-gradient(#ffffff80 0%, #00000080 100%), radial-gradient(at 50% 0, #ffffff1a 0%, #00000080 50%);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   flex-direction: column;
   display: flex;
 }
@@ -141,10 +146,13 @@ ul li a {
 }
 
 #country-name {
+  max-width: 30%;
+  flex-wrap: wrap;
   margin-top: -300px;
   margin-left: 2em;
   padding-left: 0;
   font-size: 2em;
+  display: flex;
   position: absolute;
 }
 
@@ -173,6 +181,7 @@ p {
 .chart {
   width: 100%;
   flex-wrap: wrap;
+  padding: auto;
   display: flex;
 }
 
@@ -181,6 +190,10 @@ p {
   height: 30vh;
   margin: 10% auto auto 10%;
   padding: auto;
+}
+
+#footer {
+  color: #58a4b0;
 }
 
 /*# sourceMappingURL=index.e5980c4e.css.map */

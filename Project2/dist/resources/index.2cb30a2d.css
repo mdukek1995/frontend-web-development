@@ -1,10 +1,17 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@200&display=swap";
+html, body {
+  height: 100% !important;
+}
+
 body {
   background-blend-mode: soft-light, screen;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #dcd9d4;
   background-image: linear-gradient(#ffffff80 0%, #00000080 100%), radial-gradient(at 50% 0, #ffffff1a 0%, #00000080 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
   display: flex;
 }
 
@@ -12,26 +19,36 @@ header {
   width: 100%;
   text-transform: uppercase;
   justify-content: center;
-  padding-top: 3em;
+  padding-top: 4em;
   font-family: Oswald, sans-serif;
   display: flex;
-  position: relative;
 }
 
 h1 {
   color: #000;
-  z-index: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: auto;
   font-size: 5em;
-  position: absolute;
+}
+
+h2 {
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: Oswald, monospace;
+  font-size: 2em;
+}
+
+#title {
+  font-size: 50%;
 }
 
 #navigation {
   width: 100%;
-  z-index: 2;
   justify-content: center;
   align-items: center;
   display: inline-flex;
@@ -44,7 +61,7 @@ h1 {
   border-radius: 20px;
   flex-flow: row;
   justify-content: center;
-  margin: 30% .5em .5em;
+  margin: 40% .5em .5em;
   padding: 1em;
   font-family: Roboto Mono, monospace;
   font-size: large;
@@ -110,6 +127,31 @@ ul li a {
 .nav-button:hover:after {
   opacity: 0;
   transform: scale(.1, 1);
+}
+
+#more-information {
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  display: flex;
+}
+
+.resource-links {
+  color: #000;
+  outline: none;
+  padding: 0 1em;
+  font-family: Roboto Mono, monospace;
+  font-size: 1.3em;
+  text-decoration: none;
+  display: block;
+}
+
+.resource-links:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.2cb30a2d.css.map */
