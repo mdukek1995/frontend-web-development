@@ -4,7 +4,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "npx parcel index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "animejs": "^3.2.1",
