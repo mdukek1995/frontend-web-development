@@ -121,13 +121,13 @@ ul li a {
 
 .container {
   width: 100%;
-  padding: 5%;
+  padding: 10%;
   display: flex;
 }
 
 #forms {
-  width: 40vh;
-  height: 40vh;
+  width: 50vh;
+  height: 50vh;
   margin-top: 10%;
   padding: auto;
 }
