@@ -580,7 +580,6 @@ svg.addEventListener("load", function() {
             ]
         }
     });
-    //init block for chart
     function updateChart(areaArray) {
         console.log(myChart.data.datasets[0].data);
         while(myChart.data.datasets[0].data.length > 0)myChart.data.datasets[0].data.pop();

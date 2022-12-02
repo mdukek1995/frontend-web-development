@@ -43,7 +43,6 @@ svg.addEventListener("load",function(){
                 }]
             },
         })
-    //init block for chart
 
     function updateChart(areaArray) {
         console.log(myChart.data.datasets[0].data);
